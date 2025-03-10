@@ -1,6 +1,6 @@
-jax==0.3.25
-jaxlib==0.3.25
-optax
-pennylane
-matplotlib
-tqdm
+jax==0.4.33
+jaxlib==0.4.33
+optax==0.2.4
+pennylane==0.40.0
+matplotlib==3.10.0
+tqdm==4.67.1
