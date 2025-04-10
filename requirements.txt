@@ -4,3 +4,4 @@ optax==0.2.4
 pennylane==0.40.0
 matplotlib==3.10.0
 tqdm==4.67.1
+seaborn==0.13.2
