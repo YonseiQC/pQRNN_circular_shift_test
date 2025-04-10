@@ -6,6 +6,7 @@ import optax
 import matplotlib.pyplot as plt
 from tqdm import trange
 import numpy as np
+from visualization import plot_probs, plot_hidden_state
 
 # --- Basic settings
 ############################### <Adjustable Parameters> ##############################
