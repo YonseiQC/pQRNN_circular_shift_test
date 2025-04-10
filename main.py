@@ -26,7 +26,6 @@ plt.tight_layout()
 plt.show()
 
 # --- Results
-h_state = jnp.zeros(2**n_H, dtype=jnp.complex64).at[0].set(1.0+0.0j)
 current_input = 0
 print("Input -> Output (Target)")
 for _ in range(n_able_bits):
