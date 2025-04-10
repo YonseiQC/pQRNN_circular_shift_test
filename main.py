@@ -3,12 +3,12 @@ import jax.numpy as jnp
 from jax import lax, random
 import matplotlib.pyplot as plt
 from tqdm import trange
-from model import n_able_bits, total_epochs, X_data, Y_data, QRB, QRB_circuit, pQRNN, train_step, params, opt_state
+from model import n_able_bits, total_epochs, X_data, Y_data, pQRNN, train_step, params, opt_state
 
 # --- Train loop
 loss_history = []
 key3 = random.PRNGKey(100)  ##$ 하나의 key로 관리
-for ep in trange(total_epoch, desc="Training"):
+for ep in trange(total_epochs, desc="Training"):
     key3, subkey = random.split(key3)  ##$ 매 epoch마다 key 분할
     params, opt_state, loss_val = train_step(params, opt_state, X_data, Y_data, subkey)
     loss_history.append(float(loss_val))
