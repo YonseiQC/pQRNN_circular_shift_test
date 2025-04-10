@@ -1,3 +1,6 @@
+import jax
+import jax.numpy as jnp
+from jax import lax, random
 import matplotlib.pyplot as plt
 from tqdm import trange
 from model import n_able_bits, total_epochs, X_data, Y_data, QRB, QRB_circuit, pQRNN, train_step, params, opt_state
