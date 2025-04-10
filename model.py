@@ -56,6 +56,8 @@ def ansatz(params, wires):
             qml.IsingZZ(params["ent"][d, n_D + n_H + i], wires=[q0, q1])
 
 # --- QNode
+dev = qml.device("default.qubit", wires=wires)
+
 @qml.qnode(dev, interface="jax", diff_method="backprop")
 def QRB_circuit(params, hidden_state, x):
     """
