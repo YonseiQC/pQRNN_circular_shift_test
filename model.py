@@ -11,8 +11,8 @@ from visualization import plot_probs, plot_hidden_state
 # --- Basic settings
 ############################### <Adjustable Parameters> ##############################
 n_D = 3  # Number of qubits in Register D" (Stores input data)
-depth = 30  # Depth of Ansatz
-total_epoch = 200  # Number of training epochs
+depth = 50  # Depth of Ansatz
+total_epoch = 300  # Number of training epochs
 ############################### <Adjustable Parameters> ##############################
 
 n_H = n_D  # Number of qubits in Register H (Hidden)
