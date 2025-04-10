@@ -1,4 +1,6 @@
 import seaborn as sns
+import numpy as np
+import seaborn as sns
 
 def plot_probs(probs, title="Reg.D Output Probabilities"):
     plt.figure(figsize=(6, 3))
